@@ -252,6 +252,9 @@ body {
     background-color: #FF5F00;
     border-radius: 10px;
     color: #fff !important;
+    &:hover{
+        background-color: #ec5800;
+    }
 }
 
 .menu-btn-holder {
@@ -473,10 +476,10 @@ body {
         a {
             display: flex;
             background-color: #fff;
-            border-radius: 100px;
+            border-radius: 10px;
             padding: 15px 40px;
             align-items: center;
-            min-width: 288px;
+            min-width: 340px;
             position: relative;
             bottom: 0;
 

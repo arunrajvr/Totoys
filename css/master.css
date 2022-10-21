@@ -242,6 +242,9 @@ body {
   border-radius: 10px;
   color: #fff !important;
 }
+.button-primary:hover {
+  background-color: #ec5800;
+}
 
 .menu-btn-holder {
   width: 18px;
@@ -419,10 +422,10 @@ body {
 .shop-by-age .button-holder a {
   display: flex;
   background-color: #fff;
-  border-radius: 100px;
+  border-radius: 10px;
   padding: 15px 40px;
   align-items: center;
-  min-width: 288px;
+  min-width: 340px;
   position: relative;
   bottom: 0;
 }
