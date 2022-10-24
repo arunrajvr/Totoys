@@ -1,5 +1,4 @@
 @import url(../plugin/animate/css/animate.css);
-@import url(../fonts/circular-font/stylesheet.css);
 @import url(../plugin/owl-carosel/css/owl.carousel.min.css);
 @import url(../plugin/owl-carosel/css/owl.theme.default.min.css);
 @import url(../plugin/bootstrap/stylesheets/_bootstrap.scss);
@@ -242,9 +241,19 @@ body {
     position: relative;
     bottom: 0;
     box-shadow: none;
-    &:hover{
-        bottom:2px;
+
+    &:hover {
+        bottom: 2px;
         box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.07);
+    }
+
+    &.disabled {
+        opacity: .2;
+        pointer-events: none;
+
+        &:hover {
+            cursor: not-allowed;
+        }
     }
 }
 
@@ -252,7 +261,8 @@ body {
     background-color: #FF5F00;
     border-radius: 10px;
     color: #fff !important;
-    &:hover{
+
+    &:hover {
         background-color: #ec5800;
     }
 }
@@ -320,12 +330,15 @@ body {
             color: #222;
             position: relative;
             display: block;
-            bottom:0;
+            bottom: 0;
+
             img {
                 box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.07);
             }
-            &:hover{
-                bottom:2px;
+
+            &:hover {
+                bottom: 2px;
+
                 img {
                     box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.07);
                 }
@@ -442,7 +455,7 @@ body {
 }
 
 .services-holder {
-    .content-holder {
+    .title-description {
         max-width: 600px;
     }
 
@@ -683,5 +696,98 @@ footer {
                 }
             }
         }
+    }
+}
+
+.title-description {
+    max-width: 600px;
+
+    p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 0.5px;
+    }
+}
+
+.contact-us {
+    .row {
+        margin-left: -37px;
+        margin-right: -37px;
+
+        .col-lg-6,
+        .col-md-6 {
+            padding-left: 37px;
+            padding-right: 37px;
+        }
+    }
+
+    .form-holder {
+        margin-top: 35px;
+
+        .form-group {
+            margin-bottom: 24px;
+            position: relative;
+
+            .form-control {
+                box-shadow: none;
+                border: 1px solid #939BA3;
+                border-radius: 4px;
+                height: 48px;
+            }
+
+            textarea {
+                &.form-control {
+                    height: 152px;
+                    resize: none;
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            label {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 8px;
+            }
+
+            .button-holder {
+                button {
+                    padding: 25px 40px;
+                    border: none;
+                    border-radius: 4px;
+                    display: block;
+                    width: 100%;
+                    color: white;
+                    height: 80px;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 32px;
+                }
+            }
+
+            .email-validate {
+                position: absolute;
+                right: 10px;
+                bottom: 15px;
+            }
+        }
+    }
+}
+
+#err {
+    display: none;
+
+    &.show {
+        display: block
     }
 }

@@ -1,5 +1,4 @@
 @import url(../plugin/animate/css/animate.css);
-@import url(../fonts/circular-font/stylesheet.css);
 @import url(../plugin/owl-carosel/css/owl.carousel.min.css);
 @import url(../plugin/owl-carosel/css/owl.theme.default.min.css);
 @import url(../plugin/bootstrap/stylesheets/_bootstrap.scss);
@@ -236,6 +235,13 @@ body {
   bottom: 2px;
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.07);
 }
+.button.disabled {
+  opacity: 0.2;
+  pointer-events: none;
+}
+.button.disabled:hover {
+  cursor: not-allowed;
+}
 
 .button-primary {
   background-color: #FF5F00;
@@ -394,7 +400,7 @@ body {
   color: #04121F;
 }
 
-.services-holder .content-holder {
+.services-holder .title-description {
   max-width: 600px;
 }
 .services-holder .image-content-holder {
@@ -579,6 +585,82 @@ footer .content-right ul li.social-media a {
   vertical-align: middle;
   padding: 0 8px;
   opacity: 0.3;
+}
+
+.title-description {
+  max-width: 600px;
+}
+.title-description p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+}
+
+.contact-us .row {
+  margin-left: -37px;
+  margin-right: -37px;
+}
+.contact-us .row .col-lg-6,
+.contact-us .row .col-md-6 {
+  padding-left: 37px;
+  padding-right: 37px;
+}
+.contact-us .form-holder {
+  margin-top: 35px;
+}
+.contact-us .form-holder .form-group {
+  margin-bottom: 24px;
+  position: relative;
+}
+.contact-us .form-holder .form-group .form-control {
+  box-shadow: none;
+  border: 1px solid #939BA3;
+  border-radius: 4px;
+  height: 48px;
+}
+.contact-us .form-holder .form-group textarea.form-control {
+  height: 152px;
+  resize: none;
+}
+.contact-us .form-holder .form-group:last-child {
+  margin-bottom: 0;
+}
+.contact-us .form-holder .form-group label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.contact-us .form-holder .form-group .button-holder button {
+  padding: 25px 40px;
+  border: none;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  color: white;
+  height: 80px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+}
+.contact-us .form-holder .form-group .email-validate {
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+}
+
+#err {
+  display: none;
+}
+#err.show {
+  display: block;
 }
 
 /*# sourceMappingURL=master.css.map */
